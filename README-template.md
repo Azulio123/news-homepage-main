@@ -117,7 +117,7 @@ It took a LONG time to figure out what menu I need to use and how to implement, 
 
 ### Continued development
 
-2. I am still working on all of this being as accessible as possible. I still need the documentation on screen readers in order to implement them. I am still so confused about how it works that I will have to look at a guide for it.
+1. I am still working on all of this being as accessible as possible. I still need the documentation on screen readers in order to implement them. I am still so confused about how it works that I will have to look at a guide for it.
 2. Workflow could be improved. I still tend to go all over the place fixing one small thing and then moving to completely different part of the project and fixing that instead of going completely section by section.
 3. Going Mobile first. I need to set up my workflow to focus on mobile view first and foremost.
 4. Not messing with padding, margins, and other CSS centering parameters before implementing the skeleton and structure first. I wasted a lot of time getting things to not look like a hot mess by using CSS too quickly to get certain parts to center when their absence did that for me.            
