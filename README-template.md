@@ -46,13 +46,11 @@ Users should be able to:
 
 
 ### What I learned
-´´´html
-<div class="proud-of-html">
-<h1>Some HTML code I'm proud of</h1>
-<div class="container-fluid">
-<nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="">W.</a> 
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+
+Some HTML code I'm proud of:
+It took a LONG time to figure out what menu I need to use and how to implement, and on top of that, figuring out the individual settings to override the default Bootstrap settings to get the menu just right.
+
+   <!--   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-right" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -80,10 +78,14 @@ Users should be able to:
     </ul>
       </div>
   </nav>
-</div>
+</div>-->
   
-<div class="proud-of-this-css>
-            <h1>CSS I am proud of (which is almost all of it)</h1>
+
+      CSS I am proud of (which is almost all of it):
+      Figuring out how to get this to look nice in mobile view, which can be tricky. What is trickier is the breakpoints between desktop to tablet. Tablet view is NOT at all styled or dealt with. Please only view on desktop or mobile. Haha. The tablet-size view is ATROCIOUS. 
+      
+      I am most proud of the styling I did to fix the offcanvas navbar though. That is simply boring to look at though.
+      
             @media only screen and (max-width: 650px) {
     body { 
         padding: 3%;
@@ -110,14 +112,6 @@ Users should be able to:
     }
 }
 </div>
-            
-```html
-.proud-of-html {
-  color: lightgray;
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
 
 
 
