@@ -1,12 +1,7 @@
-# Frontend Mentor - News homepage solution
-
-This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,8 +10,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,18 +21,6 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: Toggle the mobile menu (requires some JavaScript)
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
@@ -47,66 +28,118 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+1. Marking up everything with the appropriate tags
+2. Working down by sections 
+    a. Some sections needed to be pieced together, so this part of the process was ongoing and sometimes frustrating!
+3. Implementing rows and columns using bootstrap (ongoing fiddling)
+4. Applying the most superficial styles (fonts, colors, etc.)
+5. Fine-tuning aspects
+6. Continually fiddling to fit the eye-balled parameters of the project
+7. Troubleshooting the offcanvas drawer navbar menu (I DID NOT have to use javascript)
+
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Bootstrap
+- HTML
+- CSS
+- Mobile First in practice (Although, sometimes I focused more on the desktop design despite knowing better)
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
 ```html
+<div class="proud-of-html">
 <h1>Some HTML code I'm proud of</h1>
-```
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="">W.</a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-right" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+      <ul id="drawer-list" class="navbar-nav ms-auto">
+         
+        <li class="nav-item">
+            <a id="drawer-link" class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a id="drawer-link" class="nav-link" href="#new">New</a>
+        </li>
+        <li class="nav-item">
+            <a id="drawer-link" class="nav-link" href="#home">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a id="drawer-link" class="nav-link" href="#trending">Trending</a>
+      </li>
+      <li class="nav-item">
+        <a id="drawer-link" class="nav-link" href="#categories">Categories</a>
+    </li>
+    </ul>
+      </div>
+  </nav>
+</div>
+  
+<div class="proud-of-this-css>
+            <h1>CSS I am proud of (which is almost all of it)</h1>
+            @media only screen and (max-width: 650px) {
+    body { 
+        padding: 3%;
+    }
+    
+    .main-pic {
+        display: none;
+    }
+    .mobile-pic {
+      display: block;  
+    }
+
+    footer {
+        padding-top: 2em;
+    }
+
+    #home { 
+        margin-bottom: 3em;
+    }
+    
+    .trending-image {
+        width: 12.625rem;
+        height: 80%;
+    }
+}
+</div>
+            
+```html
+.proud-of-html {
+  color: lightgray;
 ```css
 .proud-of-this-css {
   color: papayawhip;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+2. I am still working on all of this being as accessible as possible. I still need the documentation on screen readers in order to implement them. I am still so confused about how it works that I will have to look at a guide for it.
+2. Workflow could be improved. I still tend to go all over the place fixing one small thing and then moving to completely different part of the project and fixing that instead of going completely section by section.
+3. Going Mobile first. I need to set up my workflow to focus on mobile view first and foremost.
+4. Not messing with padding, margins, and other CSS centering parameters before implementing the skeleton and structure first. I wasted a lot of time getting things to not look like a hot mess by using CSS too quickly to get certain parts to center when their absence did that for me.            
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+Bootstrap documentation!
+            - I learned a lot about BS5 by reading more and messing around with individual settings. It is ALWAYS a good idea to really get into the nitty-gritty of a               library like this.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@Azulio123](https://www.frontendmentor.io/profile/Azulio123)
+- Dev.to - https://dev.to/lavenderliz
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+My husband has been invaluable once again. He helps me break down problems and lends a hand with anything, even trying things that are outside of the scope of the project. What a chad.
