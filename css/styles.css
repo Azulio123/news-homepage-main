@@ -1,3 +1,7 @@
+:root {
+    --main-txt-color: #00001a;
+  }
+
 body {
     font-family: "Inter", sans-serif;
     padding: 0 15%;
@@ -25,7 +29,7 @@ footer {
 
 .navbar-brand {
     font-size: 4em;
-    color:#00001a;
+    color:var(--main-txt-color);
     font-family: 'Abril Fatface', cursive;
 }
 
@@ -43,11 +47,11 @@ footer {
 .btn-close {
     margin-left: 15em;
     opacity: 100%;
-    color:#00001a;
+    color:var(--main-txt-color);
 }
 
-#drawer-link {
-    color:#00001a;
+#drawer-link-1 #drawer-link-2 #drawer-link-3 #drawer-link-4 #drawer-link-5 {
+    color:var(--main-txt-color);
     opacity: 100%;
     font-weight: 400;
     font-size: 1.5em;
@@ -57,7 +61,7 @@ footer {
 
 .top-header {
     font-weight: 800;
-    color:#00001a;
+    color:var(--main-txt-color);
     margin: 0;
     padding: .5em .55em .5em 0;
     font-size: 4em;
@@ -79,11 +83,11 @@ footer {
 }
 
 .read-more-btn:hover {
-    background-color:#00001a;
+    background-color:var(--main-txt-color);
 }
 
 .button:hover {
-    background-color:#00001a;
+    background-color:var(--main-txt-color);
 }
 
 .main-pic {
@@ -93,7 +97,7 @@ footer {
 /* New, Dark Blue Column with three hrefs Column*/
 
 #new {
-    background-color: #00001a;
+    background-color: var(--main-txt-color);
     color: white;
     float: right;
     align-content: left;
@@ -140,7 +144,7 @@ footer {
     font-size: 1.5em;
     text-decoration: none;
     font-weight: 700;
-    color:#00001a;
+    color:var(--main-txt-color);
     margin-bottom: .75em;
 }
 
